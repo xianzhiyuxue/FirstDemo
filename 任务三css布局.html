@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>导航主题式经典布局</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+		.div1{
+			height: 150px;
+			width: 250px;
+			top: 10px;
+			left: 10px;
+			position: absolute;			
+		}	
+		.div2{
+			height: 115px;
+			width: 800px;
+			top: 10px;
+			left: 300px;
+			position: absolute;
+		}
+		.div3{
+			height: 800px;
+			width: 250px;
+			top: 200px;
+			left: 10px;
+			position: absolute;
+		}
+		.div4{
+			height: 800px;
+			width: 800px;
+			top: 200px;
+			left: 300px;
+			position: absolute;
+		}
+	
+		.div4_2{
+		    height: 700px;
+			width: 800px;
+			top: 280px;
+			left: 300px;
+			position: absolute;	
+		}
+		.imgLogo{
+		    float: left;
+		    display: block;
+		    width: 213px;
+		    height: 73px;
+		    margin: 33px 20px 0;
+		    background: url(//img.alicdn.com/tps/TB1YZkPLpXXXXbzXXXXXXXXXXXX-213-57.png) no-repeat;
+		}
+	    .input{
+	    	height: 30px;
+	    	width: 400px;
+	    	float: left;
+	    	margin-left: 100px;
+	    	margin-top: 40px;
+	        border-color: red;
+	    }
+	    .btn{
+	    	height:34px;
+	    	width: 70px;
+	    	float: left;
+	    	margin-top: 40px;
+	    	background-color: red;
+	    	color: white;
+	    	border: none;
+	    }
+	    .CState{
+	      margin-left: -460px;
+	      margin-top: 85px;
+	      float:left;	
+	    }
+	    .div2 a:link{
+	    	text-decoration: none;
+	    	color:gray;
+	    }
+	    .div2 a:hover{
+    	text-decoration:underline;
+         color: yellowgreen;
+         }
+         .div3 table{
+         	border:1px solid;
+         	height: 280px;
+         	width: 210px;
+         	margin-left: 20px;
+         	
+         }
+         .div3 caption{
+         	font-size: medium;
+         	caption-side:top;
+         }
+         .div3 td{
+         	text-align: center;
+         	border:0.5px solid ;
+            padding:3px 7px 2px 7px;
+         }
+         .nav {
+	        //background-color: #EEEEEE;
+	        margin-left: 335px;
+	        margin-top: 130px;
+	        height: 120px;
+	        width: 90px;
+	        float: left; 
+	        position: absolute;
+        }
+	     .nav ul {
+	        list-style: none;
+	       // background-color: #EEEEEE;
+	    }
+	    .nav ul li {
+	        line-height: 30px;
+	        text-align: center;
+	        position: relative;
+	    }
+	     .nav a {
+	        text-decoration: none;
+	        color: #000000;
+	        display: block;
+	        width: 90px;
+	        height: 30px;
+	    }
+	     .nav a:hover {
+	        background-color: #666666;
+	        color: #FFFFFF;
+	    }
+	    .nav ul li ul li {
+	        float: none;
+	        line-height: 30px;
+	        //margin-left: 25px;
+	        background-color: #FFFFFF;
+	    }
+	.nav ul li ul {
+	        position: absolute;
+	        top: 30px;/* top值对应 滑到子菜单连续 */
+	        left: 0px;
+	        display: none;
+	        width: 90px;
+	    }
+	     .nav ul li ul li a:hover {
+	     	
+	        background-color: #009933;
+	    }
+	
+	    .nav ul li:hover ul {
+	        display: block;
+	    }
+	    .active{
+	      background-color: #EEEEEE;
+	     //color: #FFFFFF;	
+	     font-weight: bold;
+	    }
+         .div4_2 img{
+         	margin-left: -5px;
+         	margin-top: -4px;
+         }
+		</style>
+	</head>
+	<body>
+	<div class="div1">
+		<span class="imgLogo"></span> 
+	</div>
+	<div class="div2">
+		<input class="input" />
+		<input class="btn" type="button" value="搜索" />
+		<a class="CState" href="https://detail.tmall.com/item.htm?id=521411022801&ali_refid=a3_430673_1006:1103542401:N:%E9%9D%92%E5%B9%B4%E5%8D%95%E4%BB%B6%E7%A7%8B%E8%A3%A4%20%E7%94%B7%20%E7%BA%AF%E6%A3%89:e14a0f36ea5eca64027181d6e7b0d5b9&ali_trackid=1_e14a0f36ea5eca64027181d6e7b0d5b9&spm=a2e15.8261149.07626516002.11">秋裤</a>
+	</div>
+	<div class="div3">
+	  <table cellspacing="0">
+		<caption>劲爆推荐super返场</caption>
+		 <tr>
+		 	<td rowspan="2">女装</td>
+		 	<td>长裤</td>
+		 	<td>风衣</td>
+		 </tr>
+		 <tr>		 
+		 	<td></td>
+		 	<td></td>
+		 </tr>
+		 <tr>
+		 	<td rowspan="2">男装</td>
+		 	<td>外套</td>
+		 	<td>袜子</td>
+		 </tr>
+		 <tr>
+		 	<td></td>
+		 	<td></td>
+		 </tr>
+	  </table>
+	</div>
+	<div >
+	   
+	   	<div class="nav">
+		  <ul >
+			<li><a class="active" href="#">9.9疯抢</a>
+				
+				<ul>
+					<li><a href="#">全场9.9</a></li>
+					<li><a href="#">20元封顶</a></li>
+					<li><a href="#">50元好货</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+	   </div>
+	   <div class="div4_2">
+	   
+	   	<img style="margin-left: 215px;" src="//img.alicdn.com/imgextra/i4/127944757/TB2EnGSdwvD8KJjSsplXXaIEFXa_!!0-saturn_solar.jpg_220x220.jpg_.webp">
+	   	<img src="//img.alicdn.com/imgextra/i3/121911171/TB2QNuqakfb_uJkSmRyXXbWxVXa_!!0-saturn_solar.jpg_220x220.jpg_.webp">
+	   	<img src="//img.alicdn.com/imgextra/i1/15863918/TB2MMFEegnH8KJjSspcXXb3QFXa_!!0-saturn_solar.jpg_220x220.jpg_.webp">
+	   	<img src="//img.alicdn.com/imgextra/i2/98670209/TB23uwAeh6I8KJjy0FgXXXXzVXa_!!0-saturn_solar.jpg_220x220.jpg_.webp">
+	    <img src="//img.alicdn.com/imgextra/i4/13368229/TB2vN0.dwLD8KJjSszeXXaGRpXa_!!0-saturn_solar.jpg_220x220.jpg_.webp">
+	   </div>
+	</div>
+	</body>
+</html>
